@@ -1,4 +1,5 @@
 *.iml
+.idea/
 .gradle
 /local.properties
 /.idea/caches
@@ -13,3 +14,12 @@
 .externalNativeBuild
 .cxx
 local.properties
+.kotlin/
+*.log
+*.class
+*.jar
+*.war
+*.apk
+*.ap_
+*.dex
+*.so

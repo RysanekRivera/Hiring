@@ -6,6 +6,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
@@ -47,6 +48,7 @@ import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
@@ -54,6 +56,7 @@ import androidx.compose.ui.unit.dp
 import io.github.rysanekrivera.common.composables.BodyText
 import io.github.rysanekrivera.common.composables.SmallText
 import io.github.rysanekrivera.common.composables.TitleText
+import io.github.rysanekrivera.common.utils.TestTags.LOADING_SCREEN_PROGRESS_INDICATOR
 import io.github.rysanekrivera.data.models.Employee
 import io.github.rysanekrivera.ui.R
 import io.github.rysanekrivera.ui.constants.Constants.GRID_VALUE
@@ -120,7 +123,8 @@ fun AllEmployeesSuccessScreen(employees: List<Employee>, onClickCharacter: (empl
             LazyVerticalGrid(
                 state = listState,
                 columns = GridCells.Fixed(grids),
-                horizontalArrangement = Arrangement.Center
+                horizontalArrangement = Arrangement.Center,
+                contentPadding = PaddingValues(horizontal = 4.dp)
             ) {
 
                 items(
@@ -270,7 +274,7 @@ fun ErrorScreen(error: Throwable?) {
 @Composable
 fun LoadingScreen() {
     Box(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxSize().testTag(LOADING_SCREEN_PROGRESS_INDICATOR),
         contentAlignment = Alignment.Center
     ) {
         CircularProgressIndicator()

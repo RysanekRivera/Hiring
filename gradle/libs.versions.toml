@@ -26,12 +26,18 @@ jetbrainsKotlinJvm = "2.0.10"
 parcelize = "2.0.10"
 foundationLayoutAndroid = "1.7.2"
 composeUi = "1.7.2"
+coroutineTest = "1.8.1"
+mock = "1.13.5"
+mockitoCore = "4.0.0"
+mockitoKotlin = "4.0.0"
+turbine = "0.12.1"
+uiTestJunit4Android = "1.7.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -58,6 +64,12 @@ glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", versi
 compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 kotlin-parcelize = { module = "org.jetbrains.kotlin:kotlin-parcelize-runtime", version.ref = "parcelize" }
 androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
+mockito-core = { module = "org.mockito:mockito-core" , version.ref = "mockitoCore"}
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+kotlin-coroutine-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutineTest"}
+mock = { module = "io.mockk:mockk", version.ref="mock"}
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+androidx-ui-test-junit4-android = { group = "androidx.compose.ui", name = "ui-test-junit4-android", version.ref = "uiTestJunit4Android" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
