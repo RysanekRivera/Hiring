@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hiring</string>
+    <string name="ok">OK</string>
+    <string name="employee">Employee</string>
+    <string name="back_arrow">back arrow</string>
+    <string name="employee_name">Employee Name: %1$s</string>
+    <string name="error_getting_employee">Error Getting Employee</string>
+</resources>

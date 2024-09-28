@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">OK</string>
+    <string name="an_error_occurred">An Error Occurred</string>
+    <string name="one_grid">one grid</string>
+    <string name="two_grids">two grids</string>
+    <string name="three_grids">three grids</string>
+    <string name="search_employee">Search Employee</string>
+    <string name="employees">Employees</string>
+    <string name="id">ID:</string>
+    <string name="list_id">List ID:</string>
+    <string name="name">Name:</string>
+    <string name="show_snackbar">Show SnackBar</string>
+    <string name="show_alert_dialog">Show Alert Dialog</string>
+</resources>
