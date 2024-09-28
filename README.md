@@ -16,7 +16,7 @@ __Hiring__ is a robust Android application that demonstrates best practices in m
 - __State Management__: The app utilizes Jetpack Compose's state management capabilities to efficiently manage and react to UI state changes, reducing the risk of memory leaks and ensuring that UI updates are handled in a predictable manner.
 - __Event Handling__: User interactions such as lauching of SnackBars, Alert Dialogs are managed independently through the ViewModel layer, ensuring that business logic is decoupled from the UI.
 - __Reactive Asynchronous Programming__: The app leverages Kotlin Coroutines and StateFlow for efficient, non-blocking data fetching and UI updates, ensuring a smooth and responsive user experience. This approach enables the app to handle network latency and large data sets gracefully, while maintaining seamless UI performance.
-- __UI Testing Composable Functions in Isolation__: UI tests for composable functions in isolation were added to ensures performance at both, the micro and macro levels, adhering to the latest industry standards.
+- __UI Testing Composable Functions in Isolation__: UI tests for composable functions in isolation were added to ensure performance at both, the micro and macro levels, adhering to the latest industry standards.
 - __Unit Testing__: Unit tests were implemented to validate business logic, ensure reliability and minimize the potential for defects, all while adhering to contemporary best practices.
 
 The app is built using a modular and scalable architecture to ensure maintainability and testability. It leverages modern Android development tools and practices, including:
